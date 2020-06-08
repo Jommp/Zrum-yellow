@@ -1,0 +1,214 @@
+/* <---------- title main section ----------> */
+
+.title-main {
+  background-color: #dcdcdc;
+}
+
+.title-main h2 {
+  color: #2379ac;
+}
+
+.title-main span {
+  color: #2379ac;
+}
+
+/* <---------- history section ----------> */
+
+.history-container {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.history h2 {
+  font-size: 17px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.history-img {
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-img {
+  right: 55%;
+  top: 6%;
+}
+
+.big-img {
+  margin-left: 20%;
+}
+
+.history p {
+  font-size: 12px;
+  line-height: 22px;
+  max-width: 439px;
+  text-align: center;
+}
+
+/* <---------- members section ----------> */
+
+.members {
+  max-width: 420px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.member-box {
+  max-width: 168px;
+
+  flex-flow: column;
+  align-items: center;
+}
+
+.member-box h2 {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.member-box p {
+  font-size: 13px;
+  line-height: 19px;
+  max-height: 80px;
+  overflow: hidden;
+}
+
+/* <---------- sponsors section ----------> */
+
+#sponsors {
+  margin-top: 0;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+  /* <---------- history section 576px ----------> */
+  .history p {
+    max-width: 533px;
+  }
+
+  /* <---------- members section 576px ----------> */
+
+  .members {
+    max-width: 550px;
+  }
+
+  .member-box {
+    max-width: 260px;
+    flex-flow: row nowrap;
+  }
+
+  .member-box img {
+    max-width: 115px;
+    max-height: 115px;
+  }
+
+  .member-info h2 {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  /* <---------- sponsors section 576px ----------> */
+
+  #sponsors {
+    margin-top: 16px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  /* <---------- title main section 768px ----------> */
+  .title-main h2 {
+    margin-right: 27%;
+  }
+
+  /* <---------- history section 768px ----------> */
+
+  .history-container {
+    flex-flow: row-reverse;
+  }
+
+  .history h2 {
+    text-align: left;
+  }
+
+  .history p {
+    max-width: 280px;
+    text-align: left;
+  }
+
+  /* <---------- members section 768px ----------> */
+
+  .members {
+    min-width: 95%;
+
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .member-box {
+    max-width: 160px;
+    flex-flow: column nowrap;
+  }
+
+  .member-box img {
+    max-width: 155px;
+    max-height: 156px;
+  }
+
+  .member-info h2 {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  /* <---------- sponsors section 768px ----------> */
+
+  #sponsors {
+    margin-top: 10px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  /* <---------- title main section 992px ----------> */
+  .title-main h2 {
+    margin-right: 32%;
+  }
+
+  /* <---------- history section 992px ----------> */
+
+  .history h2 {
+    margin-left: 15% !important;
+  }
+
+  .history p {
+    margin-bottom: 8%;
+    max-width: 430px;
+    text-align: left;
+  }
+
+  /* <---------- members section 768px ----------> */
+  
+  .member-info h2{
+    font-size: 14px;
+  }
+
+  /* <---------- sponsors section 992px ----------> */
+
+  #sponsors {
+    margin-top: 0;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  /* <---------- title main section 1200px ----------> */
+  .title-main h2 {
+    margin-right: 35%;
+  }
+}

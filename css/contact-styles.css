@@ -1,13 +1,7 @@
 /* <---------- main section ----------> */
 .title-main {
   background-color: #2379ac;
-  height: 47px;
-  margin: 0;
   width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .title-main h2 {
@@ -23,24 +17,20 @@
 /* <---------- form section ----------> */
 
 .contact-form {
-  margin-top: 55px;
-
   flex-flow: column;
   align-items: center;
 }
 
 .contact-form p {
-  font-family: 'Century Gothic';
+  color: #2379ac;
   font-size: 19px;
   font-weight: bold;
   line-height: 1.21;
-
-  color: #2379ac;
 }
 
 .contact-form form {
   margin-top: 35px;
-  width: 440px;
+  width: 90%;
 
   flex-flow: column wrap;
   align-items: center;
@@ -55,7 +45,6 @@
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  font-family: 'Century Gothic';
   font-size: 13px;
   line-height: 1.23;
   color: #2379ac;
@@ -68,13 +57,13 @@
 }
 
 .contact-form button {
-  width: 370px;
   height: 35px;
   border-radius: 25px;
   background-color: #ffa025;
   border-width: 0;
   color: #fff;
   font-weight: bold;
+  width: 80%;
 }
 
 /* <---------- aside section ----------> */
@@ -87,9 +76,6 @@ aside {
 /* <---------- information section ----------> */
 
 .information {
-  max-width: 420px;
-  min-width: 420px;
-
   flex-flow: column;
   align-content: center;
 }
@@ -98,8 +84,8 @@ aside {
   background-color: #2379ac;
   border-radius: 5px;
   color: #fff;
-  max-height: 100px;
-  min-height: 100px;
+  height: 100px;
+  width: 100%;
 }
 
 .info-box h3 {
@@ -132,14 +118,10 @@ footer {
     flex-flow: row wrap;
   }
 
-  .title-main {
-    height: 98px;
-  }
-
   /* <---------- form section 576px ----------> */
 
-  .contact-form form {
-    width: 525px;
+  .contact-form {
+    width: 90%;
   }
 
   .contact-form form textarea {
@@ -148,8 +130,7 @@ footer {
 
   /* <---------- aside section 576px ----------> */
   aside {
-    max-width: 240px;
-    min-width: 240px;
+    width: 45%;
   }
 
   aside p {
@@ -176,13 +157,11 @@ footer {
   /* <---------- information section 576px ----------> */
 
   .information {
-    max-width: 266px;
-    min-width: 266px;
+    width: 45%;
   }
 
   .info-box {
-    max-height: 121px;
-    min-height: 121px;
+    height: 121px;
   }
 }
 
@@ -191,35 +170,26 @@ footer {
 
   /* <---------- main section 768px ----------> */
 
-  .title-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .title-main h2 {
-    margin-right: 40%;
-  }
 
   .title-main span {
     display: block;
+
     color: #fff;
     font-size: 10px;
     height: 12px;
     line-height: 15px;
+
+    position: absolute;
+    left: 0;
   }
 
-  .contact-form {
+  /* .contact-form {
     width: 100%;
-  }
+  } */
 
   /* <---------- aside section 768px ----------> */
 
   aside {
-    margin: 0 !important;
-    max-width: 280px;
-    min-width: 280px;
-
     order: 1;
   }
 
@@ -228,6 +198,8 @@ footer {
   }
 
   .others-seen-box {
+    height: 100px;
+
     justify-content: space-between;
   }
 
@@ -244,8 +216,6 @@ footer {
 
   .information {
     margin-top: 4.8rem !important;
-    max-width: 332px;
-    min-width: 332px;
 
     order: 2;
   }
@@ -263,18 +233,20 @@ footer {
 
   /* <---------- form section 992px ----------> */
   .contact-form {
-    max-width: 568px;
-    min-width: 568px;
-
+    width: 60%;
     order: 2;
   }
 
-  .contact-form form {
-    width: 568;
-
+  .contact-form form button{
+    width: 60%;
   }
 
   /* <---------- aside section 992px ----------> */
+
+  aside{
+    width: 35%;
+  }
+  
   .others-seen-box {
     justify-content: center;
   }
@@ -290,8 +262,10 @@ footer {
   }
 
   .info-box {
-    max-width: 260px;
-    min-width: 260px;
+
+    width: 30%;
+    /* max-width: 260px;
+    min-width: 260px; */
   }
 }
 
@@ -303,6 +277,17 @@ footer {
     justify-content: space-around;
   }
 
+  /* <---------- contact section 1200px ----------> */
+
+  .contact-form{
+    width: 70%;
+  }
+
+  /* <---------- aside section 1200px ----------> */
+  aside{
+    width: 25%;
+  }
+  
   /* <---------- footer section 1200px ----------> */
 
   .certified {

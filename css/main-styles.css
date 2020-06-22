@@ -59,11 +59,6 @@ header {
   margin: auto;
 }
 
-.logo-header {
-  margin-top: 17px;
-  margin-bottom: 26px;
-}
-
 /* navbar */
 
 .navbar-toggler {
@@ -83,20 +78,9 @@ a:hover {
   font-weight: bold;
 }
 
-.banner {
-  width: 100%;
-}
-
 .banner-data {
   background-color: #ffa025;
-  height: 51px;
-
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-
-  flex: 1 1;
+  
 }
 
 .banner-data img {
@@ -107,13 +91,10 @@ a:hover {
   color: white;
   font-size: 13px;
   font-weight: bold;
-  margin: auto 0 auto 12px;
   line-height: 16px;
+  margin-bottom: 0 !important;
 }
 
-.banner-phone {
-  margin-right: 32px !important;
-}
 
 .banner-image {
   background-image: url('../img/header-xs.png');
@@ -126,6 +107,7 @@ a:hover {
 
 #exclusive-packs {
   margin-top: 26px;
+  text-align: center;
 
   display: flex;
   flex-direction: column;
@@ -169,9 +151,8 @@ a:hover {
 
 .pack2,
 .pack3 {
-  max-width: 100%;
   height: 140px;
-  width: 440px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -181,12 +162,13 @@ a:hover {
 
 .pack2 img,
 .pack3 img {
-  width: 440px;
+  width: 100%;
   height: 140px;
 }
 
 .pack2 a,
 .pack3 a {
+  width: 100%;
   height: 140px;
 }
 
@@ -275,7 +257,7 @@ hr {
   border-width: 2px;
   margin-bottom: 0;
   margin-top: 9px;
-  width: 430px;
+  width: 100%;
 }
 
 .others-seen-container {
@@ -287,7 +269,7 @@ hr {
 
 .others-seen-box {
   height: 100px;
-  width: 215px;
+  width: 50%;
 
   display: flex;
   flex-direction: column;
@@ -295,11 +277,16 @@ hr {
   justify-content: center;
 }
 
+.others-seen-box img{
+  height: 90%;
+  width: 90%;
+}
+
 .others-seen-info {
   background-color: rgba(0, 0, 0, 0.56);
   height: 21px;
   text-align: center;
-  width: 186px;
+  width: 90%;
 
   position: relative;
   bottom: 18px;
@@ -328,7 +315,6 @@ hr {
 
 .benefits {
   margin-top: 24px;
-  height: 121px;
   width: 100%;
 
   display: flex;
@@ -375,6 +361,7 @@ hr {
 .new-exp-container {
   margin-top: 25px;
   margin-bottom: 15px;
+
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -382,7 +369,7 @@ hr {
 
 .new-exp-box {
   height: 272px;
-  width: 230px;
+  width: 45%;
   position: relative;
 }
 
@@ -451,7 +438,8 @@ hr {
 .news-recom-container {
   background-color: #2379ac;
   color: #fff;
-  height: 140px;
+  width: 100%;
+  
   text-align: center;
 }
 
@@ -504,7 +492,6 @@ hr {
   font-family: 'Century Gothic';
   font-size: 13px;
   line-height: 1.23;
-  width: 333px;
 }
 
 .newsletter p a {
@@ -521,6 +508,7 @@ hr {
 footer {
   background-color: #dedede;
   color: #365067;
+  width: 100%;
 }
 
 .footer-box {
@@ -560,6 +548,9 @@ footer a:hover {
   margin-right: 5px;
 }
 
+.payment-options img{
+  width: 100%;
+}
 .certified {
   left: 75%;
   top: 35%;
@@ -616,20 +607,15 @@ footer a:hover {
     margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .pack2,
   .pack3 {
-    width: 260px;
+    width: 48%;
     margin: 5px;
     justify-content: flex-start;
     align-items: center;
-  }
-
-  .pack2 img,
-  .pack3 img {
-    width: 260px;
   }
 
   .pack-sm {
@@ -637,10 +623,6 @@ footer a:hover {
   }
 
   /* <---------- aside section 576px ----------> */
-
-  hr {
-    width: 533px;
-  }
 
   .others-seen-container{
     max-width: 533px;
@@ -666,16 +648,7 @@ footer a:hover {
     margin-top: 12px;
   }
 
-  .benefit-box {
-    width: 266px;
-  }
-
   /* <---------- new experiences section 576px ----------> */
-
-  .new-exp-box {
-    height: 274px;
-    width: 273px;
-  }
 
   /* <---------- newsletter and recommendations section 576px ----------> */
 
@@ -775,8 +748,7 @@ footer a:hover {
   /* <---------- exclusive packages section 768px ----------> */
 
   #exclusive-packs {
-    margin-top: 28px;
-    width: 447px;
+    width: 60%;
 
     align-self: flex-start;
     order: 1;
@@ -789,7 +761,7 @@ footer a:hover {
   }
 
   .pack1 {
-    width: 100%;
+    width: 90%;
   }
 
   .pack1 h2,
@@ -834,20 +806,14 @@ footer a:hover {
   /* <---------- aside section 768px ----------> */
 
   aside {
-    margin: 0 0 88px 23px;
     text-align: left;
-    width: 248px;
+    width: 30%;
 
     order: 2;
     align-self: flex-start;
   }
 
-  hr {
-    width: 248px;
-  }
-
   .others-seen-box {
-    height: 100px !important;
     width: 100%;
 
 
@@ -894,11 +860,14 @@ footer a:hover {
     margin-top: 22px;
     max-width: 100%;
     height: 351px;
+
+    flex-flow: column;
   }
 
   .benefit-box {
     border: 0px solid white;
     height: 87px;
+    width: 100%;
   }
 
   .benefit-left,
@@ -917,10 +886,6 @@ footer a:hover {
 
   .new-exp-container {
     justify-content: space-around;
-  }
-
-  .new-exp-box {
-    width: 340px;
   }
 
   .btn-new-exp {
@@ -989,6 +954,10 @@ footer a:hover {
     flex-wrap: nowrap;
   }
 
+  .payment-options img{
+    width: 80%;
+  }
+
   .certified {
     top: 55%;
   }
@@ -1012,14 +981,10 @@ footer a:hover {
 
   /* <---------- exclusive packages section 992px ----------> */
 
-  #exclusive-packs {
-    width: 588px;
-  }
-
   .pack2,
   .pack3 {
     height: 189px;
-    width: 180px;
+    width: 30%;
 
     display: flex;
     flex-flow: column wrap;
@@ -1027,7 +992,7 @@ footer a:hover {
 
   .pack2 img,
   .pack3 img {
-    width: 180px;
+    width: 100%;
   }
 
   .pack-info {
@@ -1047,12 +1012,6 @@ footer a:hover {
   }
 
   /* <---------- aside section 992px ----------> */
-
-  aside {
-    margin-bottom: 155px;
-    margin-top: 43px;
-    width: 280px;
-  }
 
   hr {
     width: 100%;
@@ -1086,12 +1045,12 @@ footer a:hover {
   /* <---------- new experiences section 992px ----------> */
 
   .new-exp-container {
-    padding: 0 60px;
+    width: 100%;
   }
 
   .new-exp-box {
     height: 228px;
-    width: 200px;
+    width: 22%;
   }
 
   .new-exp-box h2 {
@@ -1140,6 +1099,10 @@ footer a:hover {
 
   /* <---------- footer section 992px ----------> */
 
+  .payment-options img{
+    width: 60%;
+  }
+
   .certified {
    left: 49%;
   }
@@ -1147,13 +1110,11 @@ footer a:hover {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /* <---------- main section 1200px ----------> */
-
-  main {
-    justify-content: space-around;
-  }
-
   /* <---------- footer section 1200px ----------> */
+
+  .payment-options img{
+    width: 40%;
+  }
 
   .certified {
     left: 50%;
